@@ -147,6 +147,11 @@ const sortBy = ref('newest')
 const currentPage = ref(1)
 const pageSize = ref(10)
 
+const selectedCategory = computed({
+  get: () => jobStore.selectedCategory,
+  set: (val) => jobStore.selectedCategory = val
+})
+
 const selectedSalary = computed({
   get: () => jobStore.selectedSalary,
   set: (val) => jobStore.selectedSalary = val
@@ -183,7 +188,11 @@ const sortedJobs = computed(() => {
 })
 
 const handleCategoryChange = (value: string[]) => {
-  jobStore.selectedCategory = value[value.length - 1] || ''
+  if (value && value.length > 0) {
+    selectedCategory.value = value[value.length - 1] || ''
+  } else {
+    selectedCategory.value = ''
+  }
 }
 
 const resetFilters = () => {
