@@ -25,6 +25,14 @@ export const useJobStore = defineStore('job', () => {
           return false
         }
       }
+      if (selectedCategory.value) {
+        const category = selectedCategory.value.toLowerCase()
+        const titleMatch = job.title.toLowerCase().includes(category)
+        const tagsMatch = job.tags.some(tag => tag.toLowerCase().includes(category))
+        if (!titleMatch && !tagsMatch) {
+          return false
+        }
+      }
       if (selectedSalary.value && !job.salary.includes(selectedSalary.value.split('-')[0])) {
         return false
       }
