@@ -359,33 +359,123 @@ export const mockMapRegions: MapRegion[] = [
 
 export const jobCategories = [
   {
-    name: '技术',
+    value: '技术',
+    label: '技术',
     children: [
-      { name: '前端开发', children: ['Vue开发', 'React开发', 'Angular开发', '移动端H5'] },
-      { name: '后端开发', children: ['Java开发', 'Python开发', 'Go开发', 'Node.js开发'] },
-      { name: '移动开发', children: ['iOS开发', 'Android开发', 'Flutter开发', 'React Native'] },
-      { name: '测试', children: ['测试开发', '功能测试', '自动化测试', '性能测试'] }
+      {
+        value: '前端开发',
+        label: '前端开发',
+        children: [
+          { value: 'Vue开发', label: 'Vue开发' },
+          { value: 'React开发', label: 'React开发' },
+          { value: 'Angular开发', label: 'Angular开发' },
+          { value: '移动端H5', label: '移动端H5' }
+        ]
+      },
+      {
+        value: '后端开发',
+        label: '后端开发',
+        children: [
+          { value: 'Java开发', label: 'Java开发' },
+          { value: 'Python开发', label: 'Python开发' },
+          { value: 'Go开发', label: 'Go开发' },
+          { value: 'Node.js开发', label: 'Node.js开发' }
+        ]
+      },
+      {
+        value: '移动开发',
+        label: '移动开发',
+        children: [
+          { value: 'iOS开发', label: 'iOS开发' },
+          { value: 'Android开发', label: 'Android开发' },
+          { value: 'Flutter开发', label: 'Flutter开发' },
+          { value: 'React Native', label: 'React Native' }
+        ]
+      },
+      {
+        value: '测试',
+        label: '测试',
+        children: [
+          { value: '测试开发', label: '测试开发' },
+          { value: '功能测试', label: '功能测试' },
+          { value: '自动化测试', label: '自动化测试' },
+          { value: '性能测试', label: '性能测试' }
+        ]
+      }
     ]
   },
   {
-    name: '产品',
+    value: '产品',
+    label: '产品',
     children: [
-      { name: '产品经理', children: ['C端产品', 'B端产品', '数据产品', 'AI产品'] },
-      { name: '产品设计', children: ['交互设计', 'UI设计', '视觉设计', '用户研究'] }
+      {
+        value: '产品经理',
+        label: '产品经理',
+        children: [
+          { value: 'C端产品', label: 'C端产品' },
+          { value: 'B端产品', label: 'B端产品' },
+          { value: '数据产品', label: '数据产品' },
+          { value: 'AI产品', label: 'AI产品' }
+        ]
+      },
+      {
+        value: '产品设计',
+        label: '产品设计',
+        children: [
+          { value: '交互设计', label: '交互设计' },
+          { value: 'UI设计', label: 'UI设计' },
+          { value: '视觉设计', label: '视觉设计' },
+          { value: '用户研究', label: '用户研究' }
+        ]
+      }
     ]
   },
   {
-    name: '运营',
+    value: '运营',
+    label: '运营',
     children: [
-      { name: '内容运营', children: ['文案策划', '内容编辑', '新媒体运营'] },
-      { name: '用户运营', children: ['用户增长', '社群运营', '会员运营'] }
+      {
+        value: '内容运营',
+        label: '内容运营',
+        children: [
+          { value: '文案策划', label: '文案策划' },
+          { value: '内容编辑', label: '内容编辑' },
+          { value: '新媒体运营', label: '新媒体运营' }
+        ]
+      },
+      {
+        value: '用户运营',
+        label: '用户运营',
+        children: [
+          { value: '用户增长', label: '用户增长' },
+          { value: '社群运营', label: '社群运营' },
+          { value: '会员运营', label: '会员运营' }
+        ]
+      }
     ]
   },
   {
-    name: '市场',
+    value: '市场',
+    label: '市场',
     children: [
-      { name: '市场营销', children: ['品牌营销', '数字营销', '活动策划'] },
-      { name: '销售', children: ['客户经理', '销售代表', '渠道销售'] }
+      {
+        value: '市场营销',
+        label: '市场营销',
+        children: [
+          { value: '品牌营销', label: '品牌营销' },
+          { value: '数字营销', label: '数字营销' },
+          { value: '活动策划', label: '活动策划' }
+        ]
+      },
+      {
+        value: '销售',
+        label: '销售',
+        children: [
+          { value: '客户经理', label: '客户经理' },
+          { value: '销售代表', label: '销售代表' },
+          { value: '渠道销售', label: '渠道销售' }
+        ]
+      }
     ]
   }
 ]
